@@ -9,6 +9,15 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@ai-sdk/deepseek": "^2.0.20",
+    "@ai-sdk/react": "^3.0.99",
+    "@ant-design/icons": "^6.1.0",
+    "@clerk/nextjs": "^6.38.2",
+    "@libsql/client": "^0.17.0",
+    "@tanstack/react-query": "^5.90.21",
+    "ai": "^6.0.97",
+    "axios": "^1.13.5",
+    "drizzle-orm": "^0.45.1",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3"
@@ -18,6 +27,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "drizzle-kit": "^0.31.9",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
     "tailwindcss": "^4",
