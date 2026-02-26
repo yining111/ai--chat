@@ -6,6 +6,7 @@ import { CheckCircleOutlined } from '@ant-design/icons';
 import { useParams } from 'next/navigation';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
+import ReactMarkdown from 'react-markdown';
 
 
 
@@ -189,9 +190,9 @@ export default function Page() {
         {messages?.map(message => (
           <div key={message.id}
             className={`flex flex-row rounded-lg ${message.role === 'assistant' ? 'justify-start mr-18' : "justify-end ml-10"}`}>
-            <p className={`inline-block p-2 rounded-lg ${message?.role === 'assistant' ? 'bg-blue-300' : 'bg-slate-100'}`}>
-              {message?.text}
-            </p>
+            <div className={`inline-block p-2 rounded-lg max-w-3xl ${message?.role === 'assistant' ? 'bg-blue-300' : 'bg-slate-100'}`}>
+              <ReactMarkdown>{message?.text}</ReactMarkdown>
+            </div>
           </div>
         ))}
       </div>
